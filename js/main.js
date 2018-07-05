@@ -1,6 +1,5 @@
 const buttons = document.querySelectorAll('.button');
 let button = Array.from([...buttons]);
-console.log(buttons);
 let container = document.getElementById('container');
 const drawMessage = document.createElement('p');
 const winnerMessage = document.createElement("p");
@@ -20,7 +19,6 @@ let resultX = false,
 function clickfunction(element) {
 
     if (element.target.tagName == 'DIV' && element.target.innerHTML != imgForX && element.target.innerHTML != imgForO) {
-        console.log('he');
         element.target.classList.add('tada');
         setText(element.target);
 
@@ -74,7 +72,7 @@ function checkForWinner(img) {
         }
     }
     if (setWinner) {
-        if (img == '<img src="img/x.png" class="img">') {
+        if (img == '<img src="img/x.PNG" class="img">') {
             winner('X');
             return true;
         } else {
