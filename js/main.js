@@ -10,8 +10,8 @@ let count = false;
 let counterForX = false,
     counterForO = false;
 
-const imgForX = `<img src="img/x.png" class="img">`;
-const imgForO = '<img src="img/o.png" class="img">';
+const imgForX = `<img src="./img/x.png" class="img">`;
+const imgForO = '<img src="./img/o.png" class="img">';
 let resultX = false,
     resultO = false,
     allClicked = false;
