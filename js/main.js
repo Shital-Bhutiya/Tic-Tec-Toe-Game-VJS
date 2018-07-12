@@ -33,8 +33,6 @@ function clickfunction(element) {
     }
 }
 
-
-
 function checkClicked(button) {
     return button.classList.contains('tada');
 }
@@ -83,8 +81,6 @@ function checkForWinner(img) {
     return false;
 }
 
-
-
 function winner(s) {
     playerCounter(s);
     winnerMessage.innerHTML = 'The winner is ' + s + ' player';
@@ -93,7 +89,6 @@ function winner(s) {
 }
 
 function playerCounter(s) {
-
     if (s == 'X') {
         counterForX++;
         document.getElementById('X').innerHTML = `Player X = `+counterForX;
@@ -102,7 +97,6 @@ function playerCounter(s) {
         document.getElementById('O').innerHTML = `Player O = `+counterForO;
     }
 }
-
 
 function drawGame() {
     let check ;
@@ -120,11 +114,6 @@ function drawGame() {
         document.body.appendChild(drawMessage);
     }
 }
-
-
-
-
-
 
 function playagain() {
     const playagain = document.createElement('button');
@@ -144,6 +133,5 @@ function playagain() {
         winnerMessage.remove();
         drawMessage.remove();
     });
-
     document.body.appendChild(playagain);
 }
