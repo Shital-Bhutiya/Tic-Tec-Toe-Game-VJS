@@ -70,7 +70,7 @@ function checkForWinner(img) {
         }
     }
     if (setWinner) {
-        if (img == '<img src="img/x.png" class="img">') {
+        if (img == '<img src="./img/x.png" class="img">') {
             winner('X');
             return true;
         } else {
