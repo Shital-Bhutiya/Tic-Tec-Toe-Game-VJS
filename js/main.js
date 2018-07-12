@@ -72,7 +72,7 @@ function checkForWinner(img) {
         }
     }
     if (setWinner) {
-        if (img == '<img src="img/x.PNG" class="img">') {
+        if (img == '<img src="img/x.png" class="img">') {
             winner('X');
             return true;
         } else {
@@ -96,10 +96,10 @@ function playerCounter(s) {
 
     if (s == 'X') {
         counterForX++;
-        document.getElementById('X').innerHTML = `Player X = ${counterForX}`;
+        document.getElementById('X').innerHTML = `Player X = `+counterForX;
     } else {
         counterForO++;
-        document.getElementById('O').innerHTML = `Player O = ${counterForO}`;
+        document.getElementById('O').innerHTML = `Player O = `+counterForO;
     }
 }
 
