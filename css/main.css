@@ -1,5 +1,7 @@
 body{
     text-align:center;
+    font-family: fantasy;
+    background: lightblue;
 }
 .button {
     width: 60px;
@@ -93,4 +95,4 @@ border-radius: 5px;
     transform: scale3d(1, 1, 1);
     }
     } 
-  ×
+ 
